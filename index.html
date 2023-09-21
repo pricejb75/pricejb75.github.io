@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <title>💻 Jeremy Price</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+          <router-link v-bind:to="{ name : 'home'}">
+            <img src="../assets/JP.png" alt="Viva Logo" id="vivaImage" />
+          </router-link>
+        </div>
+    
+        <div class="navigation">
+          <input type="checkbox" class="toggle-menu" />
+          <div class="hamburger"></div>
+          
+          <ul class="menu">
+    
+            <li>
+                <a href="#the-projects">Projects</a>
+            </li>
+            <li>
+                <a href="#the-contact">Contact</a>
+            </li>
+            <li>
+                <a href="#the-skills">Skills</a>
+            </li>
+    
+    
+          </ul>
+        </div>
+      </header>
+
+
+
+
+      <div class="container">
+
+        <div class="leftside">
+            <img src="../assets/Headshot.png" alt="headshot" class="jp">
+        </div>
+
+        
+
+        <div class="rightside">
+            <h1 id="first"> <i id="hi">Hi!</i> My name is Jeremy Price.</h1>
+            <h2 id="second"> I am a talented full stack developer based in Jacksonville, FL.  </h2>
+           <h3 id="third">For the past eight years, I've used my strong communciation skills to make difficult concepts easy to 
+            understand for my students as a middle school band director. 
+           </h3>
+           <h4 id="fourth">
+            I have spent the past year learning programming concepts through Tech Elevator's Part Time Software Engineering 
+            Bootcamp and I've created this website to showcase some of my work!
+           </h4>
+        </div>
+
+
+    </div>
+
+    <div class="container1" id="the-skills">
+
+        <div class="image-container">
+             <img src="../assets/TOOLS.png" alt="skills" class="skills" id="skills-pic">
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="header2">
+            <h1 id="header-text">
+
+
+             ⚫️ Spring Boot <br>
+             ⚫️ Java <br>
+             ⚫️ PostgreSQL <br>
+             ⚫️ HTML <br>
+             ⚫️ CSS <br>
+             ⚫️ JavaScript <br>
+             ⚫️ Vue.js <br>
+             ⚫️ Responsive Design  <br>
+             ⚫️ Intellij <br>
+             ⚫️ Git <br>
+             ⚫️ Unit Testing (JUnit)  <br>
+             ⚫️ JSON <br>
+             ⚫️ Squarespace <br>
+
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="container3" id="the-projects">
+
+        <div class="takeoff-card">
+
+            <div class="takeoff-photo">
+                <img src="../assets/TakeOff.png" alt="takeoff" id="to-photo">
+            </div>
+
+            <div class="description-container">
+                <h1 class="description">
+                    I collaborated with a team to create an application that enables users to search, filter and book flights and hotels. Users search for real 
+                    data about flights and hotels, compare offers and book their trip! This app uses Java, Spring Boot, and Vue. 
+                </h1>
+            </div>
+
+            <div class="buttons">
+
+                <button class="live-demo">LIVE DEMO</button>
+
+                <a href="https://github.com/pricejb75/TakeOff" target="_blank">
+                    <button class="source-code">SOURCE CODE</button>
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+    
+
+        <div class="viva-card">
+
+            <div class="takeoff-photo">
+                <img src="../assets/Viva.png" alt="takeoff" id="to-photo">
+            </div>
+
+            <div class="description-container">
+                <h1 class="description">
+                    I created an e-commerce site! Search food and drinks from around the world, create an account, save your finds for later. This app uses 
+                    PostgreSQL, Spring Boot, Java, and Vue. 
+                </h1>
+            </div>
+
+            <div class="buttons">
+
+
+                <button class="live-demo">LIVE DEMO</button>
+
+
+                <a href="https://github.com/pricejb75/Viva" target="_blank">
+                    <button class="source-code">SOURCE CODE</button>
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <div class="takeoff-card">
+
+            <div class="takeoff-photo">
+                <img src="../assets/Math.png" alt="takeoff" id="to-photo">
+            </div>
+
+            <div class="description-container">
+                <h1 class="description">
+                    I made an app that allows students to practice their multiplication! Select how many questions you'd like to answer, keep track of your score,
+                    and go for it! This app uses vanilla HTML, CSS, and Javascript. 
+                </h1>
+            </div>
+
+            <div class="buttons">
+
+
+                <button class="live-demo">LIVE DEMO</button>
+
+
+                <a href="https://github.com/pricejb75/MathHelper" target="_blank">
+                    <button class="source-code">SOURCE CODE</button>
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer_container" id="the-contact"> 
+
+        <div class="socialIcons">
+
+            <a href="https://github.com/pricejb75" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jeremy-b-price/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:pricejb@75gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <div class="footer_nav">
+            <ul>
+
+                <li>
+                    <a href="#contact"></a>
+                </li>
+                <li>
+                    <a href="#projects"></a>
+                </li>
+                <li>
+                    <a href="#contact"></a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="footer_bottom">
+            <p>CopyRight &copy;2023 designed by <span class="name">Jeremy Price</span></p>
+        </div>
+
+    </div>
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
